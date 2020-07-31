@@ -1,9 +1,9 @@
-.TH novnc_server 1  "July 14, 2020" "version 1.2.0" "USER COMMANDS"
+.TH novnc_proxy 1  "July 14, 2020" "version 1.2.0" "USER COMMANDS"
 
 .SH NAME
-novnc_server - noVNC proxy server
+novnc_proxy - noVNC proxy server
 .SH SYNOPSIS
-.B novnc_server [--listen PORT] [--vnc VNC_HOST:PORT] [--cert CERT] [--ssl-only]
+.B novnc_proxy [--listen PORT] [--vnc VNC_HOST:PORT] [--cert CERT] [--ssl-only]
 
 Starts the WebSockets proxy and a mini-webserver and
 provides a cut-and-paste URL to go to.
@@ -21,8 +21,6 @@ provides a cut-and-paste URL to go to.
     --ssl-only            Disable non-https connections.
 
     --record FILE         Record traffic to FILE.session.js
-
-In the source this command can be found under utils/launch.sh .
 
 .SH AUTHOR
 The noVNC Authors

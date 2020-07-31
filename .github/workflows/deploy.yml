@@ -31,7 +31,7 @@ jobs:
       - run: npm install
       - run: ./utils/use_require.js --clean --as commonjs --with-app
       - run: |
-          cp utils/launch.sh build/launch.sh
+          cp utils/novnc_proxy build/novnc_proxy
           cp snap/local/svc_wrapper.sh build/svc_wrapper.sh
       - run: |
           VERSION=$(grep '"version"' package.json | cut -d '"' -f 4)
